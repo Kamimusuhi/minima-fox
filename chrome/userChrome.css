@@ -1,0 +1,52 @@
+#navigator-toolbox-background {
+  height: 0 !important;
+}
+
+#titlebar {
+  display: none !important;
+}
+
+.titlebar-buttonbox-container {
+  display: none !important;
+}
+
+#urlbar-search-mode-indicator { display: none !important }
+#back-button { display: none !important }
+#forward-button { display: none !important }
+#reload-button { display: none; }
+#stop-button { display: none; }
+#home-button { display: none; }
+#unified-extensions-button { display: none }
+#library-button { display: none; }
+#fxa-toolbar-menu-button { display: none; }
+#customizableui-special-spring1,
+#customizableui-special-spring2 { display: none; }
+#identity-box { display: none; }
+#pageActionButton { display: none; }
+#pocket-button { display: none; }
+#urlbar-zoom-button { display: none; }
+#tracking-protection-icon-container { display: none !important; }
+#reader-mode-button{ display: none !important; }
+#star-button { display: none; }#urlbar-go-button { display: none; }
+#userContext-label, #userContext-indicator { display: none !important;}
+
+#urlbar-background { border-radius: 10px !important; }
+#urlbar-input::placeholder{ color: transparent }
+
+#navigator-toolbox {
+  position: relative;
+  z-index: 1;
+  overflow: var(--is-bar-visible);
+}
+
+#navigator-toolbox:not(:hover) {
+  --is-bar-visible: hidden;
+  opacity: 0 !important;
+  height: 20px;
+}
+
+#navigator-toolbox:focus-within {
+  height: 40px;
+  opacity: 1 !important;
+  --is-bar-visible: visible;
+}
