@@ -7,8 +7,7 @@
 }
 
 #urlbar-search-mode-indicator { display: none !important }
-#back-button { display: none !important }
-#forward-button { display: none !important }
+#back-button, #forward-button { display: none !important }
 #reload-button { display: none; }
 #stop-button { display: none; }
 #home-button { display: none; }
@@ -29,7 +28,6 @@
 #navigator-toolbox {
   position: relative;
   z-index: 1;
-  overflow: var(--is-bar-visible);
 }
 
 #navigator-toolbox:hover {
